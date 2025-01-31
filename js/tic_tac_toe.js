@@ -15,12 +15,6 @@ const b_3 = document.getElementById("b_3");
 const c_1 = document.getElementById("c_1");
 const c_2 = document.getElementById("c_2");
 const c_3 = document.getElementById("c_3");
-
-const levels =document.querySelectorAll(".level");
-const level_1= document.getElementById("level_1");
-const level_2= document.getElementById("level_2");
-const level_3= document.getElementById("level_3");
-
 //newgame ボタン取得
 const newgamebtn_display = document.getElementById("newgame-btn");
 const newgamebtn = document.getElementById("btn90");
@@ -35,7 +29,6 @@ const line6 = JudgLine(squaresArray, ["a_3", "b_3", "c_3"]);
 const line7 = JudgLine(squaresArray, ["a_1", "b_2", "c_3"]);
 const line8 = JudgLine(squaresArray, ["a_3", "b_2", "c_1"]);
 const lineArray = [line1, line2, line3, line4, line5, line6, line7, line8];
-const lineRandom =cornerLine(squaresArray,["a_1","a_3","c_1","c_3"]);
 let winningLine = null;
 
 //メッセージ
@@ -61,62 +54,9 @@ window.addEventListener("DOMContentLoaded",
         squaresArray.forEach(function (square) {
             square.classList.add("js-clickable");
         });
-        LevelSetting(0);
 
     }, false
 );
-let index;
-levels.forEach((level)=>{
-    level.addEventListener("click",() =>{
-        index =[].slice.call(levels).indexOf(level);
-        LevelSetting(index);
-    });
-});
-function LevelSetting(index){
-    level_1.classList.remove("level-selected");
-    level_2.classList.remove("level-selected");
-    level_3.classList.remove("level-selected");
-    level_1.classList.remove("level-non-selected");
-    level_2.classList.remove("level-non-selected");
-    level_3.classList.remove("level-non-selected");
-    
- if(sessionStorage.getItem("tic_tac_toe_access")){
-    switch(index){
-        case 0:
-            sessionStorage.setItem("tic_tac_toe_access","1");
-            level_1.classList.add("level-selected");
-            level_2.classList.add("level-non-selected");
-            level_3.classList.add("level-non-selected");
-        break;
-        
-        case 1:
-         sessionStorage.setItem("tic_tac_toe_access","2");
-         level_1.classList.add("level-non-selected");
-         level_2.classList.add("level-selected");
-         level_3.classList.add("level-non-selected");
-        break;
-        case 2:
-            sessionStorage.setItem("tic_tac_toe_access","3");
-            level_1.classList.add("level-non-selected");
-            level_2.classList.add("level-non-selected");
-            level_3.classList.add("level-selected");
-        break;
-        default:
-            level_1.classList.add("level-selected");
-            level_2.classList.add("level-non-selected");
-            level_3.classList.add("level-non-selected");
-        break;
-
-    }
- }else{
-    sessionStorage.setItem("tic_tac_toe_access","1");
-    level_1.classList.add("level-selected");
-    level_2.classList.add("level-non-selected");
-    level_3.classList.add("level-selected");
- }
-}
-
-
 squaresArray.forEach(function (square) {
     square.addEventListener('click', () => {
 

@@ -63,33 +63,6 @@ header{
     display: none;
 }
 
-
-.level-container{
-    margin: 0px 100px 20px;
-    font-size: 1em;
-    font-weight: bold;
-}
-.level-box{
-    display: flex;
-    justify-content: space-around;
-}
-.level{
-    padding: 10px;
-    border-radius: 10px;
-    font-size: 24px;
-    user-select: none;
-    cursor: pointer;
-}
-.level-non-selected{
-    color: whitesmoke;
-    background: grey;
-    border: solid 2px #333;
-}
-.level-selected{
-    color:grey;
-    background: #ffd347;
-    border: solid 2px #333;
-}
 .squares-container{
  display: flex;
  flex-wrap: wrap;
