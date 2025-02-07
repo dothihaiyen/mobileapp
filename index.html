@@ -3,66 +3,98 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator</title>
-    <meta name="description" content="Calculator">
+    <title>サンプルです</title>
+    <meta name="description" content="サンプル（ゲーム）">
 
-    <link rel="icon" href="calc.jpg">
-
-    <!-- Font Awesome Twitter,Facebookなどのアイコン用フォント index.cssよりも前に定義...index.css high priority -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- Font Awesome animation -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome-animation/0.0.10/font-awesome-animation.css" type="text/css" media="all" />
-
-    <link rel="stylesheet" href="css/calculator2.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/index.css">
   </head>
 
   <body>
-    <div class = "back">
-      <button id="btn99" class="back" type="button" onclick="history.back()">back</button>
-    </div>
-    <header>
-      <h1>Calculator</h1>
+    <!-- 見出し（みだし） -->
+    <header class = "header">
+      <h1>Webアプリ作成にチャレンジ中</h1>
     </header>
+    
+    <!-- 作成したアプリ -->
+    <section class="container01">
+      <h2>作成したアプリ</h2>
+      <div class = "game">
 
-    <div class="wrapper">
-      <p>入力した順番に計算をしていく計算機です。</p>
-      <div class="f-container">
-        <div class="f-box">
-          <div class ="f-item" id ="calcLog"></div>
-          <div class ="f-item" id ="result">0</div>
-          <div class ="f-item btn" id ="cancel">C</div>
-          <div class ="f-item btn" id ="div">÷</div>
-          <div class ="f-item btn" id ="num7">7</div>
-          <div class ="f-item btn" id ="num8">8</div>
-          <div class ="f-item btn" id ="num9">9</div>
-          <div class ="f-item btn" id ="mult">x</div>
-          <div class ="f-item btn" id ="num4">4</div>
-          <div class ="f-item btn" id ="num5">5</div>
-          <div class ="f-item btn" id ="num6">6</div>
-          <div class ="f-item btn" id ="sub">-</div>
-          <div class ="f-item btn" id ="num1">1</div>
-          <div class ="f-item btn" id ="num2">2</div>
-          <div class ="f-item btn" id ="num3">3</div>
-          <div class ="f-item btn" id ="add">+</div>
-          <div class ="f-item btn" id ="num0">0</div>
-          <div class ="f-item btn" id ="equal">=</div>
+        <div class="container01-01">
+          <div class="item  item01">
+            <a href="01_omikuji/omikuji.html" title="今日の運勢を占うゲームです。"><img src="img/sakura.jpg" alt="おみくじ１"><br>おみくじ１</a>
+          </div>
+          <div class="item item01">
+            <a href="02_omikuji/omikuji.html" title="音付きです。"><img src="img/omikuji2.png" alt="おみくじ２" class="img_omikuji2"><br>おみくじ２</a>
+          </div>
+          <div class="item item01">
+            <a href="03_omikuji/omikuji.html" title="テキストも画像です。"><img src="img/omikuji3.png" alt="おみくじ３"><br>おみくじ３</a>
+          </div>
+          <div class="item item01">
+            <a href="01_omikuji_kimetsu/omikuji_kimetsu.html" title="鬼滅の刃"><img src="img/zenitsu.png" alt="鬼滅の刃おみくじ"><br>鬼滅の刃<br>おみくじ</a>
+          </div>
+        </div>
+        
+        <div class="container01-02">
+          <div class="item item01">
+            <a href="02_calculator_v1/calculator.html" title="かんたんな計算機です。"><img src="img/calc1.jpg" alt="計算機１"><br>計算機１</a>
+          </div>
+          
+          <div class="item item01">
+            <a href="02_calculator_v2/calculator.html" title="=ボタンをつけた計算機です。"><img src="img/calc2.jpg" alt="計算機２"><br>計算機２</a>
+          </div>
+          
+          <div class="item item01">
+            <a href="03_calcuator(button)/03_calcuator(button).html" title="=全部ボタンの計算機です。"><img src="img/calc3.jpg" alt="計算機３"><br>計算機３</a>
+          </div>
+                    
+          <div class="item item01">
+            <a href="98_Time guessing quiz/timeguess.html" title="=時間当てクイズです"><img src="img/clock1.png" alt="クイズ">時間当て<br>クイズ</a>
+          </div>
+        </div>
+        
+        <div class="container01-03">
+          <div class="item item01">
+            <a href="04_memo/memo.html" title="メモアプリです。"><img src="img/memo.png" alt="memo"><br>memo</a>
+          </div>
+          
+          <div class="item item01">
+            <a href="04-02_ memo/04-02.memo.html" title="メモアプリv1です。"><img src="img/memo1.png" alt="memo v1"><br>memo v1</a>
+          </div>
+          
+          <div class="item item01">
+            <a href="04-06_ memo/04-06_ memo.html" title="メモアプリv2です。"><img src="img/memo2.png" alt="memo v2"><br>memo v2</a>
+          </div>
+          
+          <div class="item item01">
+            <a href="04-09_ memo/04-09_ memo.html" title="メモアプリv3です。"><img src="img/memo3.png" alt="memo v3"><br>memo v3</a>
+          </div>
+        </div>
+        
+        <div class="container01-04">
+          <div class="item item02">
+            <a href="05_05 tic tac toe/tic_tac_toe.html" title="2人でやるゲームです。"><img src="img/azarashi.png" alt="〇✖ゲーム"><br>〇✖ゲーム</a>
+          </div>
+          
+          <div class="item item02">
+            <a href="05_08 tic tac toe vs computer/tic_tac_toe.html" title="vs computerです。"><img src="img/penguin.png" alt="〇✖ゲームvs computer"><br>〇✖ゲームvs computer</a>
+          </div>
+          
+          <div class="item item02">
+            <a href="05_08 tic tac toe vs computer/tic_tac_toe.html" title="vs computer level付き。"><img src="img/bear.png" alt="〇✖ゲーム"><br>〇✖ゲームvs computer<br>level設定</a>
+          </div>
 
         </div>
+
       </div>
-    </div>
-
+      <div class="filler01"></div>
+    </section>
+    
+    <!-- フッター -->
     <footer>
-      <p>
-        <!-- Font Awesome Twitter,Facebookなどのアイコン用フォント -->
-        <!-- https://fontawesome.com/v4.7.0/icons/ でアイコンを探せるよ。 -->
-        <!-- https://saruwakakun.com/html-css/basic/font-awesome#san2 アイコンの設定いろいろ -->
-        <!-- アイコンの大きさ -->
-        <i class="fa fa-cog fa-spin animated font05" aria-hidden="true"></i>
-        <span class="mgn-01">copyright 2021 Sample Sundaidenshi</span>
-        <i class="fa fa-bicycle faa-passing animated font06" aria-hidden="true"></i>
-      </p>
+      <p>Copyright 2024 DO THI HAI YEN</p>
     </footer>
-
-    <script src="js/calculator2.js"></script>
+      <script src="js/index.js"></script>
   </body>
 </html>
